@@ -6,7 +6,7 @@
 
 :root {
     --first-color: #F55A5A;
-    --second-color: #DADADA;
+    --second-color: #918E9B;
 }
 
 body {
@@ -38,10 +38,36 @@ nav {
 .cards-wrapper {
    display: grid;
    gap: 2rem;
+   margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .card-img {
     width: 150px;
     height: 200px;
     border-radius: .5rem;
+}
+/* 
+.card-data {
+    display: grid;
+    gap: .5rem;
+} */
+
+.location-details {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.location-details a {
+    text-transform: none;
+    margin-left: .5rem;
+    color: var(--second-color);
 }

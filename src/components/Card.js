@@ -19,7 +19,7 @@ export default function Card(props) {
 			<div className="card-data">
 				<LocationDetails item={props.item} />
 				<h3 className="title">{props.item.title}</h3>
-				<h4>
+				<h4 className="dates">
 					{props.item.startDate} - {props.item.endDate}
 				</h4>
 				<p className="description">{props.item.description}</p>

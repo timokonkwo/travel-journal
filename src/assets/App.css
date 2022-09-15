@@ -38,6 +38,7 @@ nav {
 .cards-wrapper {
    display: grid;
    gap: 2rem;
+   width: 90%;
    margin: 0 auto;
 }
 
@@ -64,10 +65,33 @@ nav {
     column-gap: .4rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    font-size: .9rem;
 }
 
 .location-details a {
     text-transform: none;
     margin-left: .5rem;
     color: var(--second-color);
+    font-size: .8rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: .9rem;
+}
+
+.dates {
+    font-size: .7rem;
+    margin-bottom: .4rem;
+}
+
+.description {
+    font-size: .6rem;
+    line-height: 140%;
+}
+
+@media screen and (min-width: 575px){
+    .cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

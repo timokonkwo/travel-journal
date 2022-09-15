@@ -1,16 +1,19 @@
 import "../assets/App.css";
+import data from "../assets/data";
+
 import Navbar from "./Navbar";
-import Card from "./Card"
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//   import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
+import Card from "./Card";
+
 
 function App() {
-  return (
-    <div>
-      <Navbar/>
-      <Card />
-    </div>
-  );
+	const cards = data.map((item) => <Card item={item} />);
+
+	return (
+		<div>
+			<Navbar />
+			  <div className="cards-wrapper">{cards}</div>
+		</div>
+	);
 }
 
 export default App;
